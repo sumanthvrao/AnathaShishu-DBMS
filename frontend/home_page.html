@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-theme.css" rel="stylesheet" />
+  <script src="jquery/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="home_style.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">Anatha Shishu Nivasa</a>
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home_page.html">Home</a></li>
+      <li><a href="child_home.html">Child Details</a></li>
+      <li><a href="adoption_home.html">Adoption Details</a></li>
+      <li><a href="transachome.html">Transaction</a></li>
+      <li><a href="main_organization.html">Organization</a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+
+
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+</div>
+
+<h1 style="text-align:center;font-family:Comic Sans MS;font-size:50pt;color:white;"> Anatha Shishu Nivasa </h1>
+
+    <center>
+    <footer style="color:white;position:absolute;bottom:2%;left:30%;">
+    Creators: Suraj Aralihalli , 
+    Sumanth Rao , Sumedh Basarkod <br/>
+    </footer>
+  </center>
+
+<a href="child_home.html"><button type="button" class="btn btn-info btn-lg"  style="position:absolute;left:5%;top:45%;font-size: 30px;background:#4d4dff" value="Child Details">Child Details</button></a>
+
+<a  href="transachome.html"><button type="button" class="btn btn-info btn-lg" style="position:absolute;left:80%;top:45%;font-size: 30px;background:#4d4dff" value="Child Details">Transactions</button></a>
+
+<a href="adoption_home.html"> <button type="button" class="btn btn-info btn-lg"  style="position:absolute;left:5%;top:80%;font-size: 30px;background:#4d4dff" value="Child Details">Adoption Details</button></a>
+
+<a href="main_orgaization.html"><button type="button" class="btn btn-info btn-lg"  style="position:absolute;left:80%;top:80%;font-size: 30px;background:#4d4dff" value="Child Details">Organization</button></a>
+    
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
