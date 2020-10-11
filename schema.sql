@@ -1,4 +1,4 @@
--- \i 'C:/Users/suraj/Desktop/orphanage_project/code.sql'
+-- \i 'C:/Users/sumanthvrao/GitHub/Anatha-shishu-nivasa/code.sql'
 drop database anathashishu;
 create database anathashishu;
 \c anathashishu;
